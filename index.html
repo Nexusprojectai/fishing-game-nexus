@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎣 Fishing Realistic - Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-top">
+            <div id="fish-count">🐟 Peixes: <span id="catch-count">0</span></div>
+            <div id="score-display">🏆 Pontos: <span id="score">0</span></div>
+            <button id="reset-btn">🔄 Novo Jogo</button>
+        </div>
+
+        <canvas id="gameCanvas" width="900" height="600"></canvas>
+
+        <div id="ui-bottom">
+            <div id="power-bar-container">
+                <div id="power-bar-label">Força do Lançamento</div>
+                <div id="power-bar-bg">
+                    <div id="power-bar-fill"></div>
+                </div>
+            </div>
+            <div id="instruction">
+                🖱️ <strong>Clique e segure</strong> para carregar força → <strong>Solte</strong> para lançar a linha<br>
+                🎯 Quando o peixe morder, <strong>clique rápido</strong> no círculo alvo para fisgar!
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
